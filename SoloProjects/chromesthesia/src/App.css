@@ -1,0 +1,195 @@
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(211, 211, 211);
+  background-color: rgb(62, 62, 62);
+  font-size: 18px;
+  text-shadow: 2px 4px rgba(36, 36, 36, 0.434);
+}
+
+.App {
+  padding: 0px;
+  width: 100%;
+  justify-content: center;
+}
+
+#colorWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#colorArray {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 40px;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(50, 50, 50, 0.658);
+  box-shadow: 2px 4px rgba(18, 18, 18, 0.658);
+  border-radius: 10px;
+}
+
+#spotifyOauth {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#loginInfo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+#getTrack {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#controlPanel {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+#buildPlaylist {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 30px;
+}
+
+#songDisplayWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 30px;
+}
+
+#songDisplay {
+  width: 75%;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(50, 50, 50, 0.658);
+  box-shadow: 2px 4px rgba(18, 18, 18, 0.658);
+  border-radius: 10px;
+  border-color: rgb(50, 50, 50, 0.658);
+}
+
+
+input {
+  margin-right: 10px;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+  color: rgb(182, 182, 182);
+  border-color: rgb(50, 50, 50, 0.658);
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.clientButton:focus {
+  outline: none !important;
+}
+
+.titlewrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 60px;
+  margin-top: 30px;
+  background-color: rgb(50, 50, 50, 0.658);
+  box-shadow: 2px 4px rgba(18, 18, 18, 0.658);
+  border-radius: 10px;
+}
+
+.titleletter {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  opacity: 0.8;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: rgba(50, 50, 50, 0);
+  text-shadow: 2px 4px rgba(26, 26, 26, 0.658);
+}
+
+.clientButton {
+  color: rgb(182, 182, 182);
+  border-color: rgb(50, 50, 50, 0.658);
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+  box-shadow: 2px 4px rgba(26, 26, 26, 0.658);
+}
+
+.trackinfo {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  margin: 0px;
+  background-color: rgba(50, 50, 50, 0);
+}
+
+.infotext {
+  font-weight: 100;
+  background-color: rgba(50, 50, 50, 0);
+  margin-right: 15px;
+}
+
+.infoname {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(182, 182, 182);
+  background-color: rgba(50, 50, 50, 0);
+}
+
+.colorbox {
+  display: inline-block;
+  height: 30px;
+  width: 4px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; 
+}
+
+#deleteButtonsWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+button:focus {
+  outline: none;
+}
