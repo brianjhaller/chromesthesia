@@ -16,7 +16,7 @@ const app = express();
 let redirect_uri = process.env.REDIRECT_URI || 'http://localhost:8888/callback'
 
 // Uncomment to auto-drop tables on restart of server
-// Track.sync({force: true}, {logging: console.log})
+Track.sync({force: false}, {logging: console.log})
 
 app.use(bodyParser.urlencoded({ extended: true }), cookieParser())
    .use(bodyParser.json())
