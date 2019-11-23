@@ -3,3 +3,11 @@ option_settings:
     NODE_ENV: production
     NPM_CONFIG_PRODUCTION: true
     NPM_USE_PRODUCTION: false
+    CLIENT_ID=97a78518185246a3b5a382d67020d35b
+    CLIENT_SECRET=6bab01411146474093bdf76284f45951
+    REDIRECT_URI=http://chromesthesia-env-1.enngkmnpp3.us-east-1.elasticbeanstalk.com/callback
+    FRONTEND_URI=http://chromesthesia-env-1.enngkmnpp3.us-east-1.elasticbeanstalk.com/
+    DBNAME=chromesthesiadb
+    DBUSER=cdbadmin
+    DBPASSWORD=qaYyMuvZgP7x3kzPDmxU
+    PORT=8888
