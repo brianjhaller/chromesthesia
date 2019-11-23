@@ -1,7 +1,17 @@
 const Sequelize = require('sequelize');
 
-const sequelize = 
-  new Sequelize("postgres://nmayakie:tFUGLb9nLpQRgri4NSwrodIuGMiTxwcR@salt.db.elephantsql.com:5432/nmayakie");
+var sequelize = new Sequelize(process.env.DBNAME, process.env.DBUSER, process.env.DBPASSWORD, {
+    host: 'chromesthesiadbinstance.cw0xkvj02vii.us-east-1.rds.amazonaws.com',
+    port: 5432,
+    logging: console.log,
+    maxConcurrentQueries: 100,
+    dialect: 'postgres',
+    dialectOptions: {
+        ssl:'Amazon RDS'
+    },
+    pool: { maxConnections: 5, maxIdleTime: 30},
+    language: 'en'
+})
 
 const Track = sequelize.define(
   "track",

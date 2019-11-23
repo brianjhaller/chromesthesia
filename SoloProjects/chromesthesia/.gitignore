@@ -1,4 +1,24 @@
-npm-debug.log*
-node_modules/
-dist/bundle.js
+# General
+.DS_Store
 .env
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# output from webpack
+dist/
+
+# zip file for initial aws deployment
+*.zip
+
+# jest coverage
+coverage/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

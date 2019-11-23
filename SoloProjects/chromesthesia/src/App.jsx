@@ -235,14 +235,24 @@ class App extends Component{
             <div className="App">
                 <Title />
                 <SpotifyOauth name={this.state.user.name} />
-                <ColorButtons sendInfo={this.sendInfo} pullFromDb={this.pullFromDb} track={this.state.track} artist={this.state.artist} 
-                    album={this.state.album} trackUri={this.state.trackUri} mode={this.state.playMode} returnSlideValue={this.returnSlideValue} pullFromDb={this.pullFromDb} />
-                <ControlButtons getSong={this.getSong} pausePlay={this.pausePlay} 
+                <ColorButtons 
+                    sendInfo={this.sendInfo} pullFromDb={this.pullFromDb} 
+                    track={this.state.track} artist={this.state.artist} 
+                    album={this.state.album} trackUri={this.state.trackUri} 
+                    mode={this.state.playMode} returnSlideValue={this.returnSlideValue} 
+                    pullFromDb={this.pullFromDb} />
+                <ControlButtons 
+                    getSong={this.getSong} pausePlay={this.pausePlay} 
                     resumePlay={this.resumePlay} skipTrack={this.skipTrack} />
-                <SongDisplay track={this.state.track} artist={this.state.artist} getSong={this.getSong}
-                    album={this.state.album} currentlyPlaying={this.state.currentlyPlaying} />
-                <BuildPlaylist switchModes={this.switchModes} mode={this.state.playMode} />
-                <DeleteButtons destroyDb={this.destroyDb} destroySong={this.destroySong} destroyPlaylist={this.destroyPlaylist} />
+                <SongDisplay 
+                    track={this.state.track} artist={this.state.artist} 
+                    getSong={this.getSong} album={this.state.album} 
+                    currentlyPlaying={this.state.currentlyPlaying} />
+                <BuildPlaylist 
+                    switchModes={this.switchModes} mode={this.state.playMode} />
+                <DeleteButtons 
+                    destroyDb={this.destroyDb} destroySong={this.destroySong} 
+                    destroyPlaylist={this.destroyPlaylist} />
             </div>
         )
     }
